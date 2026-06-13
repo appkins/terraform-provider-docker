@@ -1,5 +1,5 @@
 resource "docker_image" "foo" {
-  name                 = "localhost:15000/foo:1.0"
+  name = "localhost:15000/foo:1.0"
   build {
     suppress_output = true
     remote_context  = "fooRemoteContext"

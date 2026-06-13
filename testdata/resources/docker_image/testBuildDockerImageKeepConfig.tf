@@ -2,8 +2,8 @@ provider "docker" {
   alias = "private"
 }
 resource "docker_image" "foo" {
-  provider             = "docker.private"
-  name                 = "%s"
+  provider = "docker.private"
+  name     = "%s"
 
   build {
     context      = "%s"

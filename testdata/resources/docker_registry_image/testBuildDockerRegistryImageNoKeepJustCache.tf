@@ -4,7 +4,7 @@ provider "docker" {
     address = "%s"
   }
 }
-resource "docker_registry_image" "%s" {
+resource "docker_registry_image" {
   provider             = "docker.private"
   name                 = "%s"
   insecure_skip_verify = true

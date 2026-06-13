@@ -3,11 +3,11 @@ provider "docker" {
 }
 
 resource "docker_image" "file_permissions" {
-  provider             = "docker.private"
-  name                 = "%s"
+  provider = "docker.private"
+  name     = "%s"
 
   build {
-    context      = "%s"
-    dockerfile   = "%s"
+    context    = "%s"
+    dockerfile = "%s"
   }
 }

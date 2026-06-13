@@ -3,9 +3,9 @@ resource "docker_image" "foo" {
 }
 
 resource "docker_tag" "foobar" {
-    source_image = "%s"
-    target_image = "%s"
-    depends_on = [
-      docker_image.foo
-    ]
+  source_image = "%s"
+  target_image = "%s"
+  depends_on = [
+    docker_image.foo
+  ]
 }
